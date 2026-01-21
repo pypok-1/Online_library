@@ -8,7 +8,7 @@ class Author(models.Model):
     biography = models.TextField(blank=True)
 
     def __str__(self):
-        return f"{self.first_name} {self.last_name}"
+        return f"{self.name} {self.last_name}"
 
 
 class Book(models.Model):
@@ -22,3 +22,4 @@ class Book(models.Model):
 
     def __str__(self):
         return self.name
+
