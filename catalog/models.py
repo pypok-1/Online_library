@@ -18,6 +18,7 @@ class Book(models.Model):
     description = models.TextField(blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     pages_count = models.IntegerField(default=0)
+    is_available = models.BooleanField(default=True)
 
     def __str__(self):
         return self.name
